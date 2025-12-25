@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Solar Partner</title>
+  <meta name="description" content="Privacy Policy for Solar Partner — Precision solar analytics with privacy-by-design. Learn what data we process, why, and how to exercise your rights." />
+  <link rel="canonical" href="https://solarpartner.app/privacy" />
+  <style>
+    :root{
+      --primary-green:#2E8B57;
+      --light-green:#E8F5E9;
+      --dark-gray:#2C3E50;
+      --medium-gray:#7F8C8D;
+      --light-gray:#F8F9FA;
+      --border-radius:12px;
+      --box-shadow:0 8px 30px rgba(0,0,0,.08);
+      --max-width:900px;
+      --focus-outline: 3px solid rgba(46,139,87,0.25);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      margin:0;
+      background:var(--light-gray);
+      color:var(--dark-gray);
+      line-height:1.6;
+      padding:20px;
+    }
+    .container{
+      max-width:var(--max-width);
+      margin:32px auto;
+      background:#fff;
+      border-radius:var(--border-radius);
+      box-shadow:var(--box-shadow);
+      overflow:hidden;
+    }
+
+    /* Header */
+    .brand {
+      display:flex;
+      gap:16px;
+      align-items:center;
+      padding:28px 32px;
+      background:linear-gradient(135deg,var(--primary-green),#3498db);
+      color:#fff;
+    }
+    .brand h2{
+      margin:0;
+      font-size:1.25rem;
+      font-weight:700;
+      letter-spacing:-0.2px;
+    }
+    .brand .badge{
+      margin-left:auto;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.18);
+      padding:8px 14px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:.95rem;
+      backdrop-filter: blur(6px);
+    }
+
+    main[role="main"]{padding:32px}
+
+    .meta {
+      display:flex;
+      gap:20px;
+      align-items:center;
+      flex-wrap:wrap;
+      margin-bottom:18px;
+    }
+    .meta p{margin:0; color:var(--medium-gray); font-size:.95rem}
+
+    h1{font-size:1.75rem; margin:12px 0 18px 0}
+    h2{font-size:1.2rem; margin:22px 0 12px 0; color:var(--dark-gray)}
+    h3{font-size:1rem; color:var(--primary-green); margin:16px 0 10px 0}
+
+    p{margin-bottom:12px; font-size:1rem}
+    ul,ol{margin-left:20px; margin-bottom:12px}
+
+    .disclaimer{
+      background:var(--light-green);
+      border-left:4px solid var(--primary-green);
+      padding:18px;
+      border-radius:0 var(--border-radius) var(--border-radius) 0;
+      margin:18px 0;
+    }
+
+    /* Feature grid */
+    .feature-grid{
+      display:grid;
+      gap:16px;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      margin:20px 0;
+    }
+    .feature-card{
+      background:#fbfbfb;
+      padding:16px;
+      border-radius:10px;
+      border:1px solid #e8e8e8;
+      transition:transform .18s ease;
+    }
+    .feature-card:focus-within, .feature-card:hover{transform:translateY(-4px)}
+    .feature-card .title{font-weight:600; margin-bottom:8px}
+    .feature-card svg{height:28px;width:28px;margin-bottom:10px;display:block}
+
+    /* Toggle / collapsible */
+    .toggle {
+      margin:18px 0;
+      border-radius:8px;
+      overflow:hidden;
+      border:1px solid #eaeaea;
+    }
+    .toggle button.header {
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      background:var(--light-gray);
+      padding:14px 16px;
+      border:0;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .toggle button.header:focus{outline:var(--focus-outline); outline-offset:2px}
+    .toggle .panel{
+      padding:16px;
+      display:none;
+      background:#fff;
+    }
+    .toggle .panel[hidden]{display:none}
+    .toggle .panel:not([hidden]){display:block}
+
+    .compliance{
+      background:#f0f8ff;
+      border-radius:12px;
+      padding:18px;
+      border:1px solid #d7eeff;
+      margin:18px 0;
+    }
+    .compliance-grid{
+      display:grid;
+      gap:12px;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      margin-top:12px;
+    }
+    .compliance-item{
+      background:#fff;
+      padding:12px;
+      border-radius:8px;
+      border:1px solid #eaeaea;
+      text-align:center;
+    }
+
+    .data-table{width:100%;border-collapse:collapse;margin:18px 0}
+    .data-table th{background:var(--primary-green); color:#fff; padding:12px; text-align:left}
+    .data-table td{padding:12px;border-bottom:1px solid #eee}
+
+    /* footer */
+    footer.footer{
+      background:var(--dark-gray);
+      color:#fff;
+      padding:20px;
+      text-align:center;
+      margin-top:8px;
+    }
+    .contact-box{max-width:560px;margin:0 auto;background:rgba(255,255,255,.06);padding:12px;border-radius:10px}
+
+    /* back-to-top */
+    .back-to-top{position:fixed;right:18px;bottom:18px;display:none}
+
+    @media (max-width:720px){
+      .brand{padding:18px}
+      main{padding:20px}
+    }
+    @media print{
+      .brand{background:#fff;color:#000}
+      .toggle .panel{display:block !important}
+    }
+
+    /* visually hidden utility */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+  <!-- JSON-LD for PrivacyPolicy and Organization -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"PrivacyPolicy",
+    "name":"Solar Partner Privacy Policy",
+    "url":"https://solarpartner.app/privacy",
+    "datePublished":"2025-12-24",
+    "dateModified":"2025-12-24",
+    "creator": {
+      "@type":"Organization",
+      "name":"Solar Partner",
+      "url":"https://solarpartner.app",
+      "email":"privacy@solarpartner.app"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="container" role="document" aria-labelledby="brand-heading">
+    <header class="brand" role="banner">
+      <div aria-hidden="true" style="width:44px;height:44px;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--primary-green);font-weight:800">SP</div>
+      <div>
+        <h2 id="brand-heading">Solar Partner</h2>
+        <div style="font-size:.92rem;opacity:.95">Precision data for smarter solar decisions</div>
+      </div>
+      <div class="badge" aria-hidden="true">Privacy-First Architecture</div>
+    </header>
+
+    <main role="main" aria-label="Privacy policy content">
+      <!-- Configuration: set this constant to control the static last-updated/effective date -->
+      <script>
+        // Edit these variables at build-time / release-time to reflect policy effective date.
+        const EFFECTIVE_DATE = "December 24, 2025";
+        const LAST_UPDATED = "December 24, 2025";
+      </script>
+
+      <div class="meta" role="status" aria-live="polite">
+        <p><strong>Effective Date:</strong> <span id="effectiveDate">December 24, 2025</span></p>
+        <p><strong>Last Updated:</strong> <span id="lastUpdated">December 24, 2025</span></p>
+      </div>
+
+      <h1>Privacy Policy</h1>
+
+      <p>This Privacy Policy explains how Solar Partner ("we", "our", "us") collects, uses, discloses, and safeguards information in connection with the Solar Partner mobile and web applications and related services. We emphasise minimal data collection and privacy-by-design across the product.</p>
+
+      <section class="disclaimer" aria-labelledby="privacy-commitment">
+        <h2 id="privacy-commitment">Our Privacy Commitment</h2>
+        <p><strong>Solar Partner is engineered with privacy by design.</strong> We deliver professional solar analytics while minimising collection of personal data. We do not collect or retain email addresses, phone numbers, full physical addresses, or precise device location tracking by default.</p>
+      </section>
+
+      <!-- Collapsible: Core principles -->
+      <div class="toggle" id="corePrinciples">
+        <button class="header" aria-expanded="false" aria-controls="corePrinciplesPanel" type="button">
+          <span>1. Core Principles &amp; Data Minimization</span>
+          <span class="sr-only">Toggle section</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#2C3E50" d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div id="corePrinciplesPanel" class="panel" hidden>
+          <h3>Privacy by Default</h3>
+          <p>We collect only the minimum data necessary to operate and improve the app.</p>
+
+          <div class="feature-grid" aria-hidden="false">
+            <div class="feature-card" tabindex="0">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm-1 14l-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9z"/></svg>
+              <div class="title">No Personal Identifiers</div>
+              <div>We do not collect names, email addresses, phone numbers, financial data, or long-term precise GPS traces by default.</div>
+            </div>
+
+            <div class="feature-card" tabindex="0">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2v7l5 3-5 3v7l-5-4V6z"/></svg>
+              <div class="title">Local Storage First</div>
+              <div>Project data is stored locally on your device. Cloud backup is optional and enabled only when you opt in.</div>
+            </div>
+
+            <div class="feature-card" tabindex="0">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 22a2 2 0 002-2H10a2 2 0 002 2zm6-6V9a6 6 0 10-12 0v7l-2 2v1h16v-1z"/></svg>
+              <div class="title">Anonymous Analytics</div>
+              <div>We only collect aggregated, anonymized usage statistics for performance and reliability improvements.</div>
+            </div>
+
+            <div class="feature-card" tabindex="0">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg>
+              <div class="title">No Data Monetization</div>
+              <div>We do not sell, trade, or rent personal data. Our revenue is derived from product features and subscriptions.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third-party services -->
+      <div class="toggle" id="thirdParty">
+        <button class="header" aria-expanded="false" aria-controls="thirdPanel" type="button">
+          <span>2. Data Usage &amp; Third-Party Services</span>
+          <span class="sr-only">Toggle section</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#2C3E50" d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div id="thirdPanel" class="panel" hidden>
+          <p>Where needed, we call third-party services to provide core functionality. We limit shared data to what is strictly necessary and prefer ephemeral requests (not stored).</p>
+
+          <table class="data-table" role="table" aria-label="Third-party services">
+            <thead>
+              <tr>
+                <th scope="col">Service Type</th>
+                <th scope="col">Purpose</th>
+                <th scope="col">Data Shared</th>
+                <th scope="col">Privacy Impact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Solar Data APIs</strong> (e.g. Open-Meteo)</td>
+                <td>Provide radiation and weather data for analysis</td>
+                <td>Coordinates for the requested computation (one-time, not persisted by us)</td>
+                <td>Minimal; data used to compute results and discarded</td>
+              </tr>
+              <tr>
+                <td><strong>Analytics</strong> (e.g. Firebase Analytics)</td>
+                <td>Performance and usage metrics</td>
+                <td>Aggregated, anonymized event data</td>
+                <td>No personal identification; opt-out available per platform</td>
+              </tr>
+              <tr>
+                <td><strong>Crash Reporting</strong> (e.g. Crashlytics)</td>
+                <td>Debugging and stability reports</td>
+                <td>Technical logs; we avoid including identifiable personal data</td>
+                <td>Used to fix issues; retained briefly for debugging</td>
+              </tr>
+              <tr>
+                <td><strong>Advertising</strong></td>
+                <td>N/A</td>
+                <td>None</td>
+                <td>We do not use behavioral advertising</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="disclaimer" aria-hidden="false">
+            <h3>Legal Disclosure</h3>
+            <p>We may disclose information if required by law (e.g., subpoena, court order). Because we collect minimal personal data, such disclosures are expected to be extremely limited.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security & retention -->
+      <div class="toggle" id="security">
+        <button class="header" aria-expanded="false" aria-controls="securityPanel" type="button">
+          <span>3. Data Security &amp; Retention</span>
+          <span class="sr-only">Toggle section</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#2C3E50" d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div id="securityPanel" class="panel" hidden>
+          <h3>Security Measures</h3>
+          <ul>
+            <li><strong>Encryption:</strong> All network traffic uses HTTPS/TLS.</li>
+            <li><strong>Access Controls:</strong> Vendor access is limited and audited.</li>
+            <li><strong>Audit & Testing:</strong> Periodic security reviews and vulnerability scans.</li>
+            <li><strong>Patch Management:</strong> Infrastructure and dependencies are regularly patched.</li>
+          </ul>
+
+          <h3>Data Retention Policy</h3>
+          <ul>
+            <li><strong>Coordinates / Solar requests:</strong> Processed in real time; not retained by default.</li>
+            <li><strong>Project Data:</strong> Stored locally on device. If you opt into cloud backups, those backups are retained per your backup settings and our cloud provider policy.</li>
+            <li><strong>Anonymous Analytics:</strong> Retained for 24 months, then deleted.</li>
+            <li><strong>Crash Reports:</strong> Retained for up to 90 days for debugging, then purged.</li>
+          </ul>
+
+          <p><strong>Deleting your data:</strong> Because we do not retain personal identifiers by default, there is no central personal profile to delete. Device project data may be removed via app settings, by clearing app data, or by uninstalling the app. If you opted into cloud backup, contact privacy@solarpartner.app to request deletion of backups.</p>
+        </div>
+      </div>
+
+      <!-- Compliance -->
+      <section class="compliance" aria-labelledby="user-rights">
+        <h2 id="user-rights">4. User Rights &amp; Regulatory Compliance</h2>
+
+        <div class="compliance-grid">
+          <div class="compliance-item">
+            <h4>GDPR (EU)</h4>
+            <p>Rights include access, rectification, erasure, restriction, portability, and objection. See how to exercise these rights below.</p>
+          </div>
+
+          <div class="compliance-item">
+            <h4>CCPA/CPRA (California)</h4>
+            <p>Rights include the right to know, delete, and opt-out of sale. We do not sell personal information.</p>
+          </div>
+
+          <div class="compliance-item">
+            <h4>Global Rights</h4>
+            <p>Depending on your jurisdiction, you may have additional consumer privacy rights. You may lodge complaints with supervisory authorities.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;padding:12px;background:#fff;border-radius:8px;border:1px solid #eaeaea">
+          <h3>Exercising Your Rights</h3>
+          <p>To exercise rights or submit a privacy request:</p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:privacy@solarpartner.app">privacy@solarpartner.app</a></li>
+            <li><strong>Response time:</strong> We will acknowledge receipt within 48 hours and generally resolve requests within 30 days (extensions permitted by law).</li>
+            <li><strong>Verification:</strong> We may request limited information to verify identity before fulfilling a request.</li>
+            <li><strong>No fee:</strong> We do not charge for standard requests.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Additional provisions -->
+      <div class="toggle" id="additional">
+        <button class="header" aria-expanded="false" aria-controls="additionalPanel" type="button">
+          <span>5. Additional Provisions</span>
+          <span class="sr-only">Toggle section</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#2C3E50" d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div id="additionalPanel" class="panel" hidden>
+          <h3>Children's Privacy</h3>
+          <p>Our service is not directed to children under the age of 16 (EU baseline). We do not knowingly collect personal data from children. If you believe a child provided data, contact privacy@solarpartner.app and we will delete it promptly.</p>
+
+          <h3>International Transfers</h3>
+          <p>If data is transferred outside the EEA, we implement GDPR-compliant safeguards such as Standard Contractual Clauses (SCCs) or rely on an adequacy decision where applicable. Contact privacy@solarpartner.app for details.</p>
+
+          <h3>Cookies & Local Storage</h3>
+          <p>The app uses local storage for project data and small non-identifying tokens. Web deployments may use minimal cookies for session management. We do not use tracking cookies for advertising.</p>
+
+          <h3>Changes to this Policy</h3>
+          <p>We may update this Policy from time to time. Significant changes will be announced in-app and the "Last Updated" date will be revised. Continued use after updates constitutes acceptance.</p>
+
+          <h3>Accessibility</h3>
+          <p>This policy page is accessible via the app (Settings → Privacy Policy) and on our website. If you need an alternative format, contact privacy@solarpartner.app.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="contact-box" role="region" aria-label="Contact information">
+        <h3 style="margin-top:0">Contact Us</h3>
+        <p>For privacy questions or to exercise your rights:</p>
+        <p><strong>Email:</strong> <a href="mailto:privacy@solarpartner.app" style="color:#BEE9FF">privacy@solarpartner.app</a></p>
+        <p><strong>Website:</strong> <a href="https://solarpartner.app/privacy" style="color:#BEE9FF">solarpartner.app/privacy</a></p>
+        <p style="font-size:.9rem;color:rgba(255,255,255,.9)">We aim to respond to privacy inquiries within 5–7 business days.</p>
+      </div>
+
+      <div style="margin-top:12px;color:#dfefff;font-size:.95rem">
+        <p>© 2025 Solar Partner. All rights reserved.</p>
+        <p>Precision Solar Analytics with Privacy by Design</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Back to top (keyboard accessible) -->
+  <a class="back-to-top" href="#brand-heading" id="backToTop" aria-label="Back to top" style="display:none">Top</a>
+
+  <script>
+    // Apply static configured dates into the DOM
+    (function(){
+      try {
+        document.getElementById('effectiveDate').textContent = (typeof EFFECTIVE_DATE !== 'undefined') ? EFFECTIVE_DATE : 'December 24, 2025';
+        document.getElementById('lastUpdated').textContent = (typeof LAST_UPDATED !== 'undefined') ? LAST_UPDATED : 'December 24, 2025';
+      } catch(e){ /* non-fatal */ }
+    })();
+
+    // Accessible collapsible behavior
+    document.querySelectorAll('.toggle').forEach(function(toggle){
+      var btn = toggle.querySelector('.header');
+      var panel = toggle.querySelector('.panel');
+      btn.addEventListener('click', function(){
+        var expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        if (!expanded) {
+          panel.removeAttribute('hidden');
+        } else {
+          panel.setAttribute('hidden','');
+        }
+      });
+
+      // Allow Enter/Space keys (button element already handles keyboard activation)
+    });
+
+    // Back to top visibility
+    var back = document.getElementById('backToTop');
+    window.addEventListener('scroll', function(){
+      if (window.pageYOffset > 300) back.style.display = 'inline-block';
+      else back.style.display = 'none';
+    });
+    back.addEventListener('click', function(e){ e.preventDefault(); document.getElementById('brand-heading').focus(); window.scrollTo({top:0,behavior:'smooth'}); });
+  </script>
+</body>
+</html>
